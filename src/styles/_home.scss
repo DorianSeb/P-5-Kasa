@@ -1,0 +1,26 @@
+@use "./variables" as *;
+
+.home {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;  
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+  
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto; 
+    background-color: #f6f6f6; 
+    border-radius: 10px; 
+    margin-bottom: 15px;
+
+    min-height: 300px; 
+    height: calc(100vh - 390px); 
+    overflow-y: auto; /* Scroll interne */
+}

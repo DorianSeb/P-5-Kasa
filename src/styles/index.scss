@@ -1,0 +1,16 @@
+@use "./variables";
+@use "./layout";
+@use "./header";
+@use "./footer";
+@use "./error";
+@use "./card";
+@use "./home";
+@use "./about";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #FFFFFF;
+}
