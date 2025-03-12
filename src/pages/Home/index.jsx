@@ -25,7 +25,7 @@ function Home() {
       <div className="cards-container">
         {logements.length > 0 ? (
           logements.map((logement) => (
-            <Card key={logement.id} title={logement.title} cover={logement.cover} />
+            <Card key={logement.id} id={logement.id} title={logement.title} cover={logement.cover} />
           ))
         ) : (
           <p>Chargement des logements...</p>

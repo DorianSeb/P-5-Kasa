@@ -22,6 +22,12 @@
   font-weight: bold;
   color: $primary-color;
   margin: auto;
+  @media (max-width: 768px) {  // Pour tablette
+    font-size: 120px;
+  }
+  @media (max-width: 480px) {  // Pour mobile
+    font-size: 80px;
+  }
 }
 .error-message {
   font-size: 20px;
