@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "../styles/_collapse.scss"; // Assure-toi d'avoir bien le fichier SCSS
-import arrowIcon from "../assets/arrow.svg"; // Remplace avec le bon chemin de ton icône
+import "../styles/_collapse.scss";
+import arrowIcon from "../assets/arrow.svg"; 
 
 function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);

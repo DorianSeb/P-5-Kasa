@@ -4,11 +4,11 @@ import arrowLeft from "/src/assets/arrow-left.svg";
 import arrowRight from "/src/assets/arrow-right.svg";
 
 function Slideshow({ pictures }) {
+
+    const [currentIndex, setCurrentIndex] = useState(0);
   if (!pictures || pictures.length === 0) {
     return <p>Aucune image disponible</p>;
   }
-
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);

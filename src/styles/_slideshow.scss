@@ -3,7 +3,6 @@
 .slideshow {
   position: relative;
   width: 100%;
-  max-width: 1000px;
   height: 415px;
   margin: 0 auto;
   overflow: hidden;
@@ -72,5 +71,19 @@
   .slideshow .next-button img {
     width: 25px;
     height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slideshow {
+    height: 255px; 
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow {
+    height: 255px;
+    width: 355px; 
   }
 }

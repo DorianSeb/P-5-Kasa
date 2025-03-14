@@ -3,24 +3,40 @@
 .home {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;  
+    flex-grow: 1;
     gap: 20px;
     align-items: center;
     height: 100%;
 }
-  
+
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; 
+    grid-template-columns: repeat(3, minmax(250px, 1fr)); /* 3 cartes fixes */
+    justify-items: center;
     width: 90%;
     max-width: 1240px;
-    margin: 0 auto; 
-    background-color: #f6f6f6; 
-    border-radius: 10px; 
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    border-radius: 10px;
     margin-bottom: 15px;
-
-    min-height: 300px; 
-    height: calc(100vh - 390px); 
-    overflow-y: auto; /* Scroll interne */
+    padding: 20px;
+    gap: 20px;
+    transition: all 0.3s ease; 
+}
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(3, minmax(220px, 1fr)); /* Toujours 3 cartes */
+        gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 2 cartes */
+        gap: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr; 
+    }
 }
