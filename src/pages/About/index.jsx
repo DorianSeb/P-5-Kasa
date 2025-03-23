@@ -6,7 +6,7 @@ import "../../styles/_banner.scss";
 
 function About() {
   return (
-    <div className="about"> {/* On évite <main> ici */}
+    <div className="about">
       <Banner image={aboutImage} text="" />
       <div className="about-container">
         <Collapse 

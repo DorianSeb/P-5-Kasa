@@ -16,7 +16,7 @@ function Housing() {
       .then((data) => {
         const foundLogement = data.find((item) => item.id === id);
         if (!foundLogement) {
-          navigate("/404", { replace: true }); // 🚀 Redirection si ID invalide
+          navigate("/404", { replace: true }); // Redirection si ID invalide
         } else {
         setLogement(foundLogement);
         }
